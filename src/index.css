@@ -17,7 +17,7 @@
     @apply text-[50px] font-extrabold text-navyCs;
   }
   h3 {
-    @apply text-[40px] font-extrabold text-navyCs;
+    @apply text-[30px] md:text-[40px] font-extrabold text-navyCs;
   }
   h4 {
     @apply text-[35px] font-extrabold text-navyCs;
@@ -28,4 +28,17 @@
   h6 {
     @apply text-[25px] font-extrabold text-navyCs;
   }
+}
+
+/* hero section style */
+.hero::before {
+  position: absolute;
+  content: "";
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.1;
+  z-index: -1;
 }

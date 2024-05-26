@@ -4,7 +4,7 @@ const Navbar = () => {
       <div className="max-w-screen-xl mx-auto px-4 md:px-12">
         <div className="flex items-center gap-52  h-[80px]">
           <div>
-            <span>Organick</span>
+            <span>Organic</span>
           </div>
           <div className="flex justify-between w-full">
             <nav>

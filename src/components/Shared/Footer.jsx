@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="bg-white">
       <div className="max-w-screen-xl mx-auto px-4 md:px-12">
-        <div className="grid grid-cols-3 w-full gap-4 pt-5 pb-10">
+        <div className="grid grid-cols-3 w-full gap-4 pt-10 pb-14">
           <div className="text-right w-full border-r border-grayCs pr-[50px]">
             <h5 className="leading-8 mb-5">Contact Us</h5>
             <ul className="flex flex-col gap-4">
@@ -27,7 +27,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="text-center px-4">
-            <h4 className="leading-8 mb-5">Organick</h4>
+            <h4 className="leading-8 mb-5">Organic</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
               vitae obcaecati cum cupiditate illum provident nobis reiciendis
