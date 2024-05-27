@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <div className="bg-white">
@@ -9,9 +11,13 @@ const Navbar = () => {
           <div className="flex justify-between w-full">
             <nav>
               <ul className="flex gap-4 items-center">
-                <li>Home</li>
+                <Link to={"/"}>
+                  <li>Home</li>
+                </Link>
+                <Link to={"/shop"}>
+                  <li>Shop</li>
+                </Link>
                 <li>About</li>
-                <li>Shoop</li>
               </ul>
             </nav>
             <div>user</div>

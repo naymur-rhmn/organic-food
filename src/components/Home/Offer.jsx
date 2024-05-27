@@ -22,7 +22,9 @@ const Offer = () => {
             className="h-[350px] w-full bg-no-repeat bg-center bg-cover px-5 ms:px-10 md:px-[40px] rounded-xl"
           >
             <div className="flex flex-col justify-center h-full w-full md:w-5/6 lg:w-3/5">
-              <p className="font-yellowTail text-[36px]">Offer!!</p>
+              <p className="font-yellowTail text-greenCs text-[36px]">
+                Offer!!
+              </p>
               <h3 className="text-wrap font-roboto">
                 Get 10% off on Vegetables
               </h3>

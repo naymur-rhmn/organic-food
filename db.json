@@ -1,0 +1,104 @@
+{
+  "foods": [
+    {
+      "id": 1,
+      "name": "Gala Apples",
+      "category": "Fruits",
+      "image": "https://example.com/gala_apples.jpg",
+      "price": 2.99,
+      "description": "Sweet and crisp Gala apples, grown organically.",
+      "additional_description": "Packed with vitamins and antioxidants.",
+      "details": "Certified organic, sourced locally. Weight: 1 lb."
+    },
+    {
+      "id": 2,
+      "name": "Baby Spinach",
+      "category": "Vegetables",
+      "image": "https://example.com/baby_spinach.jpg",
+      "price": 3.49,
+      "description": "Tender organic baby spinach leaves, perfect for salads.",
+      "additional_description": "High in iron and vitamins A, C, and K.",
+      "details": "Grown without synthetic pesticides or fertilizers. Weight: 5 oz."
+    },
+    {
+      "id": 3,
+      "name": "Avocado",
+      "category": "Fruits",
+      "image": "https://example.com/organic_avocado.jpg",
+      "price": 1.79,
+      "description": "Creamy and nutritious organic avocados.",
+      "additional_description": "Rich in healthy fats and fiber.",
+      "details": "Certified organic, sourced from sustainable farms. Weight: 1 avocado."
+    },
+    {
+      "id": 4,
+      "name": "Carrots",
+      "category": "Vegetables",
+      "image": "https://example.com/organic_carrots.jpg",
+      "price": 2.29,
+      "description": "Sweet and crunchy organic carrots, great for snacking.",
+      "additional_description": "Packed with beta-carotene and vitamins.",
+      "details": "Grown using natural farming practices. Weight: 2 lbs."
+    },
+    {
+      "id": 5,
+      "name": "Strawberries",
+      "category": "Fruits",
+      "image": "https://example.com/organic_strawberries.jpg",
+      "price": 4.99,
+      "description": "Juicy and sweet organic strawberries, bursting with flavor.",
+      "additional_description": "Rich in vitamin C and antioxidants.",
+      "details": "Certified organic, handpicked at peak ripeness. Weight: 1 lb."
+    },
+    {
+      "id": 6,
+      "name": "Broccoli",
+      "category": "Vegetables",
+      "image": "https://example.com/organic_broccoli.jpg",
+      "price": 2.99,
+      "description": "Fresh organic broccoli florets, perfect for stir-fries and salads.",
+      "additional_description": "High in fiber, vitamin C, and antioxidants.",
+      "details": "Grown without synthetic pesticides. Weight: 1 lb."
+    },
+    {
+      "id": 7,
+      "name": "Kiwi",
+      "category": "Fruits",
+      "image": "https://example.com/organic_kiwi.jpg",
+      "price": 0.99,
+      "description": "Organic kiwi fruit with a tangy and sweet flavor.",
+      "additional_description": "Packed with vitamin C and dietary fiber.",
+      "details": "Certified organic, sourced from eco-friendly farms. Weight: 1 kiwi."
+    },
+    {
+      "id": 8,
+      "name": "Bell Peppers",
+      "category": "Vegetables",
+      "image": "https://example.com/organic_bell_peppers.jpg",
+      "price": 1.49,
+      "description": "Colorful organic bell peppers, great for cooking or snacking.",
+      "additional_description": "Rich in vitamins A and C.",
+      "details": "Grown without synthetic pesticides or GMOs. Weight: 1 lb."
+    },
+    {
+      "id": 9,
+      "name": "Blueberries",
+      "category": "Fruits",
+      "image": "https://example.com/organic_blueberries.jpg",
+      "price": 5.49,
+      "description": "Plump and sweet organic blueberries, bursting with flavor.",
+      "additional_description": "Packed with antioxidants and vitamin C.",
+      "details": "Certified organic, harvested at peak ripeness. Weight: 6 oz."
+    },
+    {
+      "id": 10,
+      "name": "Cauliflower",
+      "category": "Vegetables",
+      "image": "https://example.com/organic_cauliflower.jpg",
+      "price": 3.99,
+      "description": "Organic cauliflower florets, versatile and nutritious.",
+      "additional_description": "High in vitamin C and fiber.",
+      "details": "Grown using sustainable farming practices. Weight: 1 head."
+    }
+  ]
+}
