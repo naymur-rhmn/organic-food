@@ -9,7 +9,7 @@ const OrganicFoods = () => {
         <div>
           <SectionTitle subTitle={"Categories "} title={"Our Products"} />
         </div>
-        <div>
+        <div className="mt-[80px]">
           <Foods home={true} />
         </div>
       </div>
