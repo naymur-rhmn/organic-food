@@ -3,7 +3,7 @@ import offerbg2 from "../../assets/offer-bg-2.jpg";
 
 const Offer = () => {
   return (
-    <div className="py-[120px]">
+    <div className="py-[100px]">
       <div className="max-w-screen-xl mx-auto px-4 md:px-12">
         <div className="grid grid-cols-2 gap-4">
           <div

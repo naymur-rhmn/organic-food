@@ -1,5 +1,5 @@
 import banner from "../../assets/Banner-1.jpg";
-import { FaCircleArrowRight } from "react-icons/fa6";
+import ButtonPrimary from "../Shared/ButtonPrimary";
 
 const Hero = () => {
   return (
@@ -14,10 +14,7 @@ const Hero = () => {
           </p>
           <h1>Choose the best healthier way of life</h1>
           <div className="mt-[23px]">
-            <button className="py-[20px] px-[39px] bg-orangeCs text-[20px] font-bold font-roboto rounded-xl flex items-center gap-2 group text-navyCs">
-              <span>Explore Now</span>
-              <FaCircleArrowRight className="group-hover:translate-x-1 transition-all" />
-            </button>
+            <ButtonPrimary value={"Explore Now"} />
           </div>
         </div>
       </div>

@@ -23,8 +23,8 @@ const Foods = ({ home }) => {
       {home
         ? foods
             .slice(0, 8)
-            .map((food) => <SingleFood key={food.id} food={food} />)
-        : foods.map((food) => <SingleFood key={food.id} food={food} />)}
+            .map((food) => <SingleFood key={food._id} food={food} />)
+        : foods.map((food) => <SingleFood key={food._id} food={food} />)}
     </div>
   );
 };

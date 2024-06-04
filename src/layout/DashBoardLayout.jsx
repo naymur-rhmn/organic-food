@@ -23,8 +23,6 @@ const DashBoardLayout = () => {
             <Link to="addProduct">
               <li>Add Item</li>
             </Link>
-            <li>Update Item</li>
-            <li>Edit Item</li>
             <li>Delete Item</li>
           </ul>
         </div>

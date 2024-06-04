@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
 const SingleFood = ({ food }) => {
-  const { id, name, image, category, price, description } = food;
-  console.log(id);
+  const { _id, name, image, category, price, description } = food;
+  console.log(_id);
   return (
-    <Link to={`/shop/foods/${id}`}>
+    <Link to={`/shop/foods/${_id}`}>
       <div className="relative bg-lightGrayCs rounded-xl hover:shadow-lg">
         <span className="  bg-navyCs px-4 text-white mt-4 inline-block ml-4 rounded top-3 left-3">
           {category}

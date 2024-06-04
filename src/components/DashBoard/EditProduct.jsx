@@ -1,8 +1,9 @@
 import axios from "axios";
 import { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
+import { useLoaderData } from "react-router-dom";
 
-const AddProduct = () => {
+const EditProduct = () => {
   const [formData, setFormData] = useState({
     name: "",
     price: "",
@@ -12,11 +13,11 @@ const AddProduct = () => {
     details: "",
     image: null,
   });
+  const data = useLoaderData();
 
   // add data to state on onChange
   const handleChange = (e) => {
     const { name, value } = e.target;
-
     setFormData({
       ...formData,
       [name]: value,
@@ -32,16 +33,19 @@ const AddProduct = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     const imageURL = await uploadImage(formData.image);
     const data = {
       ...formData,
       image: imageURL,
     };
-    // post data to db
+    // update request
     try {
-      const res = await axios.post("http://localhost:3000/foosd", data);
-      toast.success("Product added success!");
+      const res = await axios.patch(
+        `http://localhost:3000/food/update/${data?._id}`,
+        data
+      );
+      console.log(res);
+      toast.success("Update success!");
     } catch (err) {
       toast.error(`${err.message}`);
       console.log(err.message);
@@ -53,26 +57,27 @@ const AddProduct = () => {
     const formData = new FormData();
     formData.append("image", imageFile);
     // post image on image hosting site
-    const response = await fetch(
-      "https://api.imgbb.com/1/upload?key=2330c86b1dc95b61468f646bda97e336",
-      {
-        method: "POST",
-        body: formData,
-      }
-    );
-
-    const data = await response.json();
-    return data.data.url;
+    if (imageFile) {
+      const response = await fetch(
+        "https://api.imgbb.com/1/upload?key=2330c86b1dc95b61468f646bda97e336",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
+      const data = await response.json();
+      return data.data.url;
+    } else {
+      return "https://placehold.co/600x400.png";
+    }
   };
-
-  // console.log(formData);
 
   return (
     <div>
       <div className="mb-8">
-        <h4>Add Product</h4>
+        <h4>Edit Product</h4>
         <p className="text-xl text-slate-500 font-semibold">
-          Bring your product add to store
+          Edit and update existing product
         </p>
       </div>
       <form onSubmit={handleSubmit} className="lg:px-32">
@@ -80,23 +85,26 @@ const AddProduct = () => {
           <div className="flex flex-col gap-1 mb-4">
             <label htmlFor="name">Name:</label>
             <input
-              className="px-3 py-3 rounded focus:shadow-md focus:outline-none"
+              className="px-3 py-3 rounded focus:shadow-md text-gray-800 focus:outline-none"
               placeholder="Fill the Field"
               type="text"
               id="name"
               name="name"
               onChange={handleChange}
+              value={formData?.name}
               required
             />
           </div>
           <div className="flex flex-col gap-1 mb-4">
             <label htmlFor="price">Price:</label>
             <input
-              className="px-3 py-3 rounded focus:shadow-md focus:outline-none"
+              className="px-3 py-3 rounded focus:shadow-md text-gray-800 focus:outline-none"
               placeholder="Fill the Field"
               type="number"
               id="price"
               name="price"
+              defaultValue={data?.price}
+              // value={formData?.price}
               onChange={handleChange}
               required
             />
@@ -104,11 +112,13 @@ const AddProduct = () => {
           <div className="flex flex-col gap-1 mb-4">
             <label htmlFor="category">Category:</label>
             <input
-              className="px-3 py-3 rounded focus:shadow-md focus:outline-none"
+              className="px-3 py-3 rounded focus:shadow-md text-gray-800 focus:outline-none"
               placeholder="Fill the Field"
               type="text"
               id="category"
               name="category"
+              defaultValue={data?.category}
+              value={formData?.category}
               onChange={handleChange}
               required
             />
@@ -119,11 +129,13 @@ const AddProduct = () => {
           <div className="flex flex-col gap-1 mb-4">
             <label htmlFor="description">Description:</label>
             <textarea
-              className="px-3 py-3 rounded focus:shadow-md focus:outline-none"
+              className="px-3 py-3 rounded focus:shadow-md text-gray-800 focus:outline-none"
               placeholder="Fill the Field"
               id="description"
               name="description"
               rows="5"
+              defaultValue={data?.description}
+              value={formData?.description}
               onChange={handleChange}
               required
             />
@@ -133,7 +145,7 @@ const AddProduct = () => {
               Additional Description:
             </label>
             <textarea
-              className="px-3 py-3 rounded focus:shadow-md focus:outline-none"
+              className="px-3 py-3 rounded focus:shadow-md text-gray-800 focus:outline-none"
               placeholder="Fill the Field"
               id="additional_description"
               name="additional_description"
@@ -146,7 +158,7 @@ const AddProduct = () => {
           <div className="flex flex-col gap-1 mb-4">
             <label htmlFor="details">Additional Description:</label>
             <textarea
-              className="px-3 py-3 rounded focus:shadow-md focus:outline-none"
+              className="px-3 py-3 rounded focus:shadow-md text-gray-800 focus:outline-none"
               placeholder="Fill the Field"
               id="details"
               name="details"
@@ -169,7 +181,7 @@ const AddProduct = () => {
               className=" px-3 py-4 rounded font-semibold bg-green-600 text-white"
               type="submit"
             >
-              Add Product
+              Submit
             </button>
           </div>
         </div>
@@ -178,4 +190,4 @@ const AddProduct = () => {
   );
 };
 
-export default AddProduct;
+export default EditProduct;

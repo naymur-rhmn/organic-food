@@ -6,6 +6,8 @@ import FoodDetails from "../components/Foods/FoodDetails";
 import DashBoardLayout from "../layout/DashBoardLayout";
 import Products from "../components/DashBoard/Products";
 import AddProduct from "../components/DashBoard/AddProduct";
+import EditProduct from "../components/DashBoard/EditProduct";
+import Login from "../components/UserEntry/Login";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +17,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home />,
+      },
+      {
+        path: "login",
+        element: <Login />,
       },
       {
         path: "shop",
@@ -41,6 +47,12 @@ const router = createBrowserRouter([
       {
         path: "addProduct",
         element: <AddProduct />,
+      },
+      {
+        path: "edit/:id",
+        loader: async ({ params }) =>
+          await fetch(`http://localhost:3000/foods/${params.id}`),
+        element: <EditProduct />,
       },
     ],
   },

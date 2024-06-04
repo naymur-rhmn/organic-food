@@ -1,5 +1,4 @@
 import { useLoaderData } from "react-router-dom";
-import apple from "../../assets/apple.png";
 import banner from "../../assets/Banner.png";
 import { useState } from "react";
 
@@ -9,13 +8,14 @@ const FoodDetails = () => {
 
   const foodItem = useLoaderData();
   const {
-    id,
+    _id,
     name,
     category,
     price,
     description,
     details,
     additional_description,
+    image,
   } = foodItem;
 
   const handleOnChange = (e) => {
@@ -40,7 +40,7 @@ const FoodDetails = () => {
         <div className="flex justify-around">
           <div className="flex gap-10 items-center ">
             <div className="bg-lightGrayCs rounded-lg">
-              <img className="w-[350px]" src={apple} alt="" />
+              <img className="w-[350px]" src={image} alt="" />
             </div>
             <div className="p-8">
               <h3 className="font-semibold font-roboto">{name}</h3>

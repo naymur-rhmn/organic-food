@@ -3,7 +3,6 @@ import Product from "./Product";
 
 const Products = () => {
   const data = useLoaderData();
-  console.log(data);
 
   return (
     <div>
@@ -21,7 +20,7 @@ const Products = () => {
       </ul>
       <div className="flex flex-col gap-4">
         {data?.map((product) => (
-          <Product key={product.id} product={product}></Product>
+          <Product key={product._id} product={product}></Product>
         ))}
       </div>
     </div>
