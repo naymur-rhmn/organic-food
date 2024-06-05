@@ -9,7 +9,9 @@ const ProductDataProvider = ({ children }) => {
   useEffect(() => {
     async function loadData() {
       try {
-        const res = await fetch("http://localhost:3000/foods");
+        const res = await fetch(
+          "https://organic-food-server-1.onrender.com/foods"
+        );
         const data = await res.json();
         setFoods(data);
       } catch (err) {

@@ -13,9 +13,12 @@ const Product = ({ product, onDelete }) => {
     setModal(false);
   };
   const handleRemoveItem = async (id) => {
-    const result = await fetch(`http://localhost:3000/food/${id}`, {
-      method: "DELETE",
-    });
+    const result = await fetch(
+      `https://organic-food-server-1.onrender.com/food/${id}`,
+      {
+        method: "DELETE",
+      }
+    );
     console.log(result.ok, result.status);
     if (result?.ok === true) {
       closeModal();

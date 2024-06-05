@@ -41,7 +41,7 @@ const EditProduct = () => {
     // update request
     try {
       const res = await axios.patch(
-        `http://localhost:3000/food/update/${data?._id}`,
+        `https://organic-food-server-1.onrender.com/food/update/${data?._id}`,
         data
       );
       console.log(res);

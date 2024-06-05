@@ -10,7 +10,7 @@ const Products = () => {
   };
 
   useEffect(() => {
-    fetch("http://localhost:3000/foods")
+    fetch("https://organic-food-server-1.onrender.com/foods")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);

@@ -12,6 +12,7 @@ import Register from "../components/UserEntry/Register";
 import PrivateRoute from "./PrivateRoute";
 import Users from "../components/DashBoard/Users";
 import DeleteUser from "../components/DashBoard/DeleteUser";
+import FoodShop from "../components/Shop/FoodShop";
 
 const router = createBrowserRouter([
   {
@@ -32,12 +33,14 @@ const router = createBrowserRouter([
       },
       {
         path: "shop",
-        element: <Foods />,
+        element: <FoodShop />,
       },
       {
         path: "shop/foods/:id",
         loader: async ({ params }) => {
-          return await fetch(`http://localhost:3000/foods/${params.id}`);
+          return await fetch(
+            `https://organic-food-server-1.onrender.com/foods/${params.id}`
+          );
         },
         element: <FoodDetails />,
       },
@@ -62,7 +65,9 @@ const router = createBrowserRouter([
       {
         path: "edit/:id",
         loader: async ({ params }) =>
-          await fetch(`http://localhost:3000/foods/${params.id}`),
+          await fetch(
+            `https://organic-food-server-1.onrender.com/foods/${params.id}`
+          ),
         element: <EditProduct />,
       },
       {

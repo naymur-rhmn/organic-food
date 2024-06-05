@@ -40,7 +40,10 @@ const AddProduct = () => {
     };
     // post data to db
     try {
-      const res = await axios.post("http://localhost:3000/foosd", data);
+      const res = await axios.post(
+        "https://organic-food-server-1.onrender.com/foosd",
+        data
+      );
       toast.success("Product added success!");
     } catch (err) {
       toast.error(`${err.message}`);

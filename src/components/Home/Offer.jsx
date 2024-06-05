@@ -21,7 +21,7 @@ const Offer = () => {
             <ButtonPrimary value={"View all product"} />
           </div>
         </div>
-        <div className="grid grid-cols-4 gap-4">
+        <div className="grid grid-cols-4 gap-4 mt-8">
           {data
             .reverse()
             .slice(0, 4)
