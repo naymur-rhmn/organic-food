@@ -69,7 +69,7 @@ const AddProduct = () => {
 
   return (
     <div>
-      <div className="mb-8">
+      <div className="text-center mb-10">
         <h4>Add Product</h4>
         <p className="text-xl text-slate-500 font-semibold">
           Bring your product add to store

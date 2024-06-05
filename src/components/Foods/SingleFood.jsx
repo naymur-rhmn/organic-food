@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const SingleFood = ({ food }) => {
   const { _id, name, image, category, price, description } = food;
-  console.log(_id);
+
   return (
     <Link to={`/shop/foods/${_id}`}>
       <div className="relative bg-lightGrayCs rounded-xl hover:shadow-lg">

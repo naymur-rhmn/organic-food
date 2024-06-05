@@ -47,7 +47,7 @@
 }
 
 /* login component */
-.shape::before {
+.shape-log::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -56,6 +56,17 @@
   content: "";
   border-right: calc(50vw) solid transparent;
   border-bottom: calc(100vh - 80px) solid #7eb693;
+  z-index: -1;
+}
+.shape-reg::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  content: "";
+  border-right: calc(50vw) solid transparent;
+  border-bottom: calc(100vh - 80px) solid #caaf4d;
   z-index: -1;
 }
 
@@ -82,4 +93,20 @@
   right: 0;
   top: 0;
   transform: rotate(180deg);
+}
+
+/* who we component */
+.who-we-bg::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  content: "";
+  background-color: lightgray;
+  background-image: url(./assets/green-field.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
 }

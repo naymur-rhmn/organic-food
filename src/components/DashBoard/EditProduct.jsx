@@ -74,7 +74,7 @@ const EditProduct = () => {
 
   return (
     <div>
-      <div className="mb-8">
+      <div className="text-center mb-10">
         <h4>Edit Product</h4>
         <p className="text-xl text-slate-500 font-semibold">
           Edit and update existing product

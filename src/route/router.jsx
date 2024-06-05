@@ -8,6 +8,10 @@ import Products from "../components/DashBoard/Products";
 import AddProduct from "../components/DashBoard/AddProduct";
 import EditProduct from "../components/DashBoard/EditProduct";
 import Login from "../components/UserEntry/Login";
+import Register from "../components/UserEntry/Register";
+import PrivateRoute from "./PrivateRoute";
+import Users from "../components/DashBoard/Users";
+import DeleteUser from "../components/DashBoard/DeleteUser";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "login",
         element: <Login />,
+      },
+      {
+        path: "register",
+        element: <Register />,
       },
       {
         path: "shop",
@@ -37,11 +45,14 @@ const router = createBrowserRouter([
   },
   {
     path: "/dashboard",
-    element: <DashBoardLayout />,
+    element: (
+      <PrivateRoute>
+        <DashBoardLayout />
+      </PrivateRoute>
+    ),
     children: [
       {
         index: true,
-        loader: async () => await fetch("http://localhost:3000/foods"),
         element: <Products />,
       },
       {
@@ -53,6 +64,14 @@ const router = createBrowserRouter([
         loader: async ({ params }) =>
           await fetch(`http://localhost:3000/foods/${params.id}`),
         element: <EditProduct />,
+      },
+      {
+        path: "users",
+        element: <Users />,
+      },
+      {
+        path: "users/delete",
+        element: <DeleteUser />,
       },
     ],
   },

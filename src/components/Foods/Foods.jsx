@@ -1,22 +1,8 @@
-import React, { useEffect, useState } from "react";
 import SingleFood from "./SingleFood";
+import useFood from "../../hook/useFood";
 
 const Foods = ({ home }) => {
-  const [foods, setFoods] = useState([]);
-
-  // data fetch raw method
-  useEffect(() => {
-    async function loadData() {
-      try {
-        const res = await fetch("http://localhost:3000/foods");
-        const data = await res.json();
-        setFoods(data);
-      } catch (err) {
-        console.error(err);
-      }
-    }
-    loadData();
-  }, []);
+  const foods = useFood();
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">

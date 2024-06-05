@@ -61,8 +61,7 @@ const Footer = () => {
       <div className="border-t border-grayCs py-4">
         <div className="max-w-screen-xl mx-auto px-4 md:px-12">
           <p className="text-center">
-            Copyright © Organick | Designed by VictorFlow Templates - Powered by
-            Webflow
+            Copyright © Nourish Organick | Developed by Naymur Rahman
           </p>
         </div>
       </div>

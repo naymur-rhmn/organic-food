@@ -1,7 +1,6 @@
 import React from "react";
 
-const SectionTitle = ({ textAlign, subTitle, title }) => {
-  console.log(textAlign);
+const SectionTitle = ({ textAlign, subTitle, title, textColor }) => {
   return (
     <div
       className={`${
@@ -15,7 +14,9 @@ const SectionTitle = ({ textAlign, subTitle, title }) => {
       <p className="font-yellowTail text-greenCs text-[36px] capitalize">
         {subTitle}
       </p>
-      <h2 className="capitalize text-navyCs">{title}</h2>
+      <h2 className={`capitalize ${textColor ? textColor : "text-navyCs"} `}>
+        {title}
+      </h2>
     </div>
   );
 };
