@@ -1,101 +1,145 @@
 {
   "foods": [
     {
-      "id": 1,
-      "name": "Gala Apples",
+      "name": "Apples",
       "category": "Fruits",
-      "image": "https://i.ibb.co/Jq30sS4/11053219-18965810.png",
-      "price": 2.99,
+      "image": "https://i.ibb.co/C6z2J7J/apple.png",
+      "price": 2.0,
       "description": "Sweet and crisp Gala apples, grown organically.",
       "additional_description": "Packed with vitamins and antioxidants.",
       "details": "Certified organic, sourced locally. Weight: 1 lb."
     },
     {
-      "id": 2,
       "name": "Baby Spinach",
       "category": "Vegetables",
-      "image": "https://i.ibb.co/C6z2J7J/apple.png",
+      "image": "https://i.ibb.co/Wy4Wz9n/food-7-min.png",
       "price": 3.49,
       "description": "Tender organic baby spinach leaves, perfect for salads.",
       "additional_description": "High in iron and vitamins A, C, and K.",
       "details": "Grown without synthetic pesticides or fertilizers. Weight: 5 oz."
     },
     {
-      "id": 3,
+      "name": "Poppy Seeds",
+      "category": "Seeds",
+      "image": "https://i.ibb.co/hCX008s/food-13-min.png",
+      "price": 2.99,
+      "description": "Organic cauliflower florets, versatile and nutritious.",
+      "additional_description": "High in vitamin C and fiber.",
+      "details": "Grown using sustainable farming practices. Weight: 1 head."
+    },
+    {
+      "name": "Chia Seeds",
+      "category": "Seeds",
+      "image": "https://i.ibb.co/0mmXNnT/food-14-min.png",
+      "price": 2.99,
+      "description": "Organic cauliflower florets, versatile and nutritious.",
+      "additional_description": "High in vitamin C and fiber.",
+      "details": "Grown using sustainable farming practices. Weight: 1 head."
+    },
+    {
       "name": "Avocado",
       "category": "Fruits",
-      "image": "https://i.ibb.co/Jq30sS4/11053219-18965810.png",
+      "image": "https://i.ibb.co/W5SW58H/avocado.png",
       "price": 1.79,
       "description": "Creamy and nutritious organic avocados.",
       "additional_description": "Rich in healthy fats and fiber.",
       "details": "Certified organic, sourced from sustainable farms. Weight: 1 avocado."
     },
     {
-      "id": 4,
       "name": "Carrots",
       "category": "Vegetables",
-      "image": "https://i.ibb.co/C6z2J7J/apple.png",
+      "image": "https://i.ibb.co/c1jc7HJ/food-3-min.png",
       "price": 2.29,
       "description": "Sweet and crunchy organic carrots, great for snacking.",
       "additional_description": "Packed with beta-carotene and vitamins.",
       "details": "Grown using natural farming practices. Weight: 2 lbs."
     },
     {
-      "id": 5,
       "name": "Strawberries",
       "category": "Fruits",
-      "image": "https://i.ibb.co/Jq30sS4/11053219-18965810.png",
+      "image": "https://i.ibb.co/rcZ9TC8/food-5-min.png",
       "price": 4.99,
       "description": "Juicy and sweet organic strawberries, bursting with flavor.",
       "additional_description": "Rich in vitamin C and antioxidants.",
       "details": "Certified organic, handpicked at peak ripeness. Weight: 1 lb."
     },
     {
-      "id": 6,
       "name": "Broccoli",
       "category": "Vegetables",
-      "image": "https://i.ibb.co/C6z2J7J/apple.png",
+      "image": "https://i.ibb.co/WyjMsfB/food-2-min.png",
       "price": 2.99,
       "description": "Fresh organic broccoli florets, perfect for stir-fries and salads.",
       "additional_description": "High in fiber, vitamin C, and antioxidants.",
       "details": "Grown without synthetic pesticides. Weight: 1 lb."
     },
     {
-      "id": 7,
       "name": "Kiwi",
       "category": "Fruits",
-      "image": "https://i.ibb.co/C6z2J7J/apple.png",
+      "image": "https://i.ibb.co/TYvGFNY/food-10-min.png",
       "price": 0.99,
       "description": "Organic kiwi fruit with a tangy and sweet flavor.",
       "additional_description": "Packed with vitamin C and dietary fiber.",
       "details": "Certified organic, sourced from eco-friendly farms. Weight: 1 kiwi."
     },
     {
-      "id": 8,
       "name": "Bell Peppers",
       "category": "Vegetables",
-      "image": "https://i.ibb.co/Jq30sS4/11053219-18965810.png",
+      "image": "https://i.ibb.co/VVST0bN/food-4-min.png",
       "price": 1.49,
       "description": "Colorful organic bell peppers, great for cooking or snacking.",
       "additional_description": "Rich in vitamins A and C.",
       "details": "Grown without synthetic pesticides or GMOs. Weight: 1 lb."
     },
     {
-      "id": 9,
       "name": "Blueberries",
       "category": "Fruits",
-      "image": "https://i.ibb.co/Jq30sS4/11053219-18965810.png",
+      "image": "https://i.ibb.co/tx7BWD7/food-1-min.png",
       "price": 5.49,
       "description": "Plump and sweet organic blueberries, bursting with flavor.",
       "additional_description": "Packed with antioxidants and vitamin C.",
       "details": "Certified organic, harvested at peak ripeness. Weight: 6 oz."
     },
     {
-      "id": 10,
       "name": "Cauliflower",
       "category": "Vegetables",
-      "image": "https://i.ibb.co/C6z2J7J/apple.png",
+      "image": "https://i.ibb.co/5KVX3Qh/food-6-min.png",
       "price": 3.99,
+      "description": "Organic cauliflower florets, versatile and nutritious.",
+      "additional_description": "High in vitamin C and fiber.",
+      "details": "Grown using sustainable farming practices. Weight: 1 head."
+    },
+    {
+      "name": "Tomato",
+      "category": "Vegetables",
+      "image": "https://i.ibb.co/1TD7WhY/food-8-min.png",
+      "price": 0.99,
+      "description": "Organic Tomato florets, versatile and nutritious.",
+      "additional_description": "High in vitamin C and fiber.",
+      "details": "Grown using sustainable farming practices. Weight: 10 oz head."
+    },
+    {
+      "name": "Banana",
+      "category": "fruits",
+      "image": "https://i.ibb.co/FsfwMfX/food-9-min.png",
+      "price": 3.0,
+      "description": "Organic Banana florets, versatile and nutritious.",
+      "additional_description": "High in vitamin zinc and fiber energetic.",
+      "details": "Grown using sustainable farming practices. Weight: 1 head."
+    },
+    {
+      "name": "Pears",
+      "category": "Fruits",
+      "image": "https://i.ibb.co/3f3V15j/food-11-min.png",
+      "price": 2.99,
+      "description": "Organic cauliflower florets, versatile and nutritious.",
+      "additional_description": "High in vitamin C and fiber.",
+      "details": "Grown using sustainable farming practices. Weight: 1 head."
+    },
+    {
+      "name": "Barley",
+      "category": "Seeds",
+      "image": "https://i.ibb.co/zGg6H1k/food-12-min.png",
+      "price": 4.99,
       "description": "Organic cauliflower florets, versatile and nutritious.",
       "additional_description": "High in vitamin C and fiber.",
       "details": "Grown using sustainable farming practices. Weight: 1 head."

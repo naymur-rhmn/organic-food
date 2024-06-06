@@ -1,3 +1,4 @@
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import banner from "../../assets/Banner-1.jpg";
 import ButtonPrimary from "../Shared/ButtonPrimary";
 
@@ -14,7 +15,9 @@ const Hero = () => {
           </p>
           <h1>Choose the best healthier way of life</h1>
           <div className="mt-[23px]">
-            <ButtonPrimary value={"Explore Now"} />
+            <AnchorLink href="#about">
+              <ButtonPrimary value={"Explore Now"} />
+            </AnchorLink>
           </div>
         </div>
       </div>

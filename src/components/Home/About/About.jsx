@@ -4,10 +4,11 @@ import veganFood from "../../../assets/Vegan-Food.png";
 import milbox from "../../../assets/Mailbox-Quality.png";
 import AboutContentPart from "./AboutContentPart";
 import ButtonPrimary from "../../Shared/ButtonPrimary";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <section className="bg-lightGrayCs py-[70px]">
+    <section id="about" className="bg-lightGrayCs py-[70px]">
       <div className="max-w-screen-2xl mx-auto px-4">
         <div className="grid grid-cols-2 items-center">
           <div className="max-h-[700px]">
@@ -43,7 +44,9 @@ const About = () => {
               />
             </div>
             <div className="mt-5">
-              <ButtonPrimary value={"Shop Now"} />
+              <Link to={"/shop"}>
+                <ButtonPrimary value={"Shop Now"} />
+              </Link>
             </div>
           </div>
         </div>

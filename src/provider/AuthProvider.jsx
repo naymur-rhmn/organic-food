@@ -21,25 +21,26 @@ const AuthProvider = ({ children }) => {
   // google sign in
   const googleProvider = new GoogleAuthProvider();
   const googleSignIn = () => {
+    setLoading(true);
     return signInWithPopup(auth, googleProvider);
   };
 
   // email & password sign up
   const emailSignUp = (email, password) => {
+    setLoading(true);
     return createUserWithEmailAndPassword(auth, email, password);
   };
 
   // email sign in
   const emailSignIn = (email, password) => {
+    setLoading(true);
     return signInWithEmailAndPassword(auth, email, password);
   };
   // observer
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
-      if (user) {
-        setLoading(false);
-        setUser(user);
-      }
+      setLoading(false);
+      setUser(user);
     });
     return () => unsubscribe();
   }, []);
