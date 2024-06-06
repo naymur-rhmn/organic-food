@@ -1,8 +1,10 @@
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import { FaFacebook } from "react-icons/fa";
 
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaPinterest } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -51,9 +53,15 @@ const Footer = () => {
           <div className="text-left pl-[50px] border-l border-grayCs">
             <h5 className="leading-8 mb-5">Utitlity Pages</h5>
             <ul className="flex flex-col gap-3">
-              <li>Home</li>
-              <li>About</li>
-              <li>Shop</li>
+              <AnchorLink href="#about">
+                <li>Home</li>
+              </AnchorLink>
+              <AnchorLink href="#about">
+                <li>Home</li>
+              </AnchorLink>
+              <Link to="/shop">
+                <li>Shop</li>
+              </Link>
             </ul>
           </div>
         </div>
