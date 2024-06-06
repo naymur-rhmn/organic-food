@@ -5,8 +5,8 @@ const WhoWe = () => {
     <section className="bg-white relative z-10">
       <div className="who-we-bg"></div>
       <div className="max-w-screen-xl mx-auto px-4 md:px-12">
-        <div className="grid grid-cols-2 py-[70px]">
-          <div className="col-start-2 pl-14 -ml-14 bg-white rounded-2xl py-12">
+        <div className="grid grid-cols-4 lg:grid-cols-2 py-[70px]">
+          <div className="col-start-2 col-end-5 lg:col-start-2 pl-14 -ml-14 bg-white rounded-2xl py-12">
             <SectionTitle
               title={"Econis is a friendly ogrganic store"}
               subTitle={"Eco friendly"}

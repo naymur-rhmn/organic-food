@@ -11,16 +11,16 @@
     @apply font-openSans bg-white;
   }
   p {
-    @apply text-darkGray text-lg;
+    @apply text-darkGray text-base;
   }
   h1 {
-    @apply text-[70px] font-extrabold text-navyCs;
+    @apply text-[40px] sm:text-[50px] md:text-[60px] lg:text-[70px] font-extrabold text-navyCs;
   }
   h2 {
-    @apply text-[50px] font-extrabold text-navyCs;
+    @apply text-[28px] sm:text-[34px] md:text-[40px] lg:text-[50px] font-extrabold text-navyCs;
   }
   h3 {
-    @apply text-[30px] md:text-[40px] font-extrabold text-navyCs;
+    @apply text-[28px] sm:text-[34px] md:text-[40px] lg:text-[44px] font-extrabold text-navyCs;
   }
   h4 {
     @apply text-[35px] font-extrabold text-navyCs;
@@ -29,7 +29,7 @@
     @apply text-[30px] font-extrabold text-navyCs;
   }
   h6 {
-    @apply text-[25px] font-extrabold text-navyCs;
+    @apply text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] font-extrabold text-navyCs;
   }
 }
 
@@ -37,12 +37,12 @@
 .hero::before {
   position: absolute;
   content: "";
-  background-color: black;
+  background-color: rgb(9, 38, 45);
   height: 100%;
   width: 100%;
   top: 0;
   left: 0;
-  opacity: 0.1;
+  opacity: 0.2;
   z-index: -1;
 }
 

@@ -10,7 +10,7 @@ export default {
     extend: {
       colors: {
         navyCs: "#274C5B",
-        greenCs: "#7EB693",
+        greenCs: "#2D9E64",
         lightGreenCs: "#EFF6F1",
         orangeCs: "#EFD372",
         grayCs: "#D4D4D4",

@@ -9,7 +9,7 @@ const Offer = () => {
   const data = useFood();
 
   return (
-    <section className="bg-navyCs py-[70px]">
+    <section className="bg-navyCs py-[80px]">
       <div className="max-w-screen-xl mx-auto px-4 md:px-12">
         <div className="flex justify-between items-center">
           <SectionTitle
@@ -24,7 +24,7 @@ const Offer = () => {
             </Link>
           </div>
         </div>
-        <div className="grid grid-cols-4 gap-4 mt-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-10">
           {data
             .reverse()
             .slice(0, 4)

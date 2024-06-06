@@ -11,12 +11,12 @@ const SectionTitle = ({ textAlign, subTitle, title, textColor }) => {
           : "text-center"
       }`}
     >
-      <p className="font-yellowTail text-greenCs text-[36px] capitalize">
+      <p className="font-yellowTail text-greenCs text-[28px] md:text-[36px] capitalize">
         {subTitle}
       </p>
-      <h2 className={`capitalize ${textColor ? textColor : "text-navyCs"} `}>
+      <h3 className={`capitalize ${textColor ? textColor : "text-navyCs"} `}>
         {title}
-      </h2>
+      </h3>
     </div>
   );
 };

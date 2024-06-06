@@ -4,7 +4,7 @@ import bg3 from "../../assets/Photo-3.jpg";
 
 const Gallery = () => {
   return (
-    <div className="bg-lightGreenCs py-[70px]">
+    <div className="bg-lightGreenCs py-[70px] md:py-[90px]">
       <div className="grid grid-cols-3 gap-6 h-[400px]">
         <div
           style={{ backgroundImage: `url(${bg1})` }}

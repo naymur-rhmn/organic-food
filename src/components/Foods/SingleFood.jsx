@@ -9,8 +9,8 @@ const SingleFood = ({ food }) => {
         <span className="  bg-navyCs px-4 text-white mt-4 inline-block ml-4 rounded top-3 left-3">
           {category}
         </span>
-        <div className="h-64 w-full">
-          <img className="h-full w-full" src={image} alt={name} />
+        <div className="h-72  lg:h-64 w-full flex justify-center">
+          <img className="h-full" src={image} alt={name} />
         </div>
         <div className="p-4">
           <div className=" flex justify-between border-b pb-1">

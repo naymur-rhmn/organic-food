@@ -2,6 +2,24 @@ import SectionTitle from "../Shared/SectionTitle";
 import bg from "../../assets/testimonial.png";
 
 const Testimonial = () => {
+  const data = [
+    {
+      title: "organic",
+      quantity: 100,
+    },
+    {
+      title: "Active product",
+      quantity: 285,
+    },
+    {
+      title: "Organic Orchads",
+      quantity: 98,
+    },
+    {
+      title: "Years of Farmin",
+      quantity: 12,
+    },
+  ];
   return (
     <section className="relative bg-lightGrayCs py-[70px] testimonial-bg z-10">
       <div className="max-w-screen-md mx-auto px-4">
@@ -11,59 +29,41 @@ const Testimonial = () => {
             subTitle={"Testimonial"}
           />
           {/* review */}
-          <div>
+          <div className="mt-5 md:mt-9 mb-6">
             <div className="flex justify-center">
               <img
-                className="h-[100px] w-[100px] rounded-full shadow inline-block"
+                className=" h-[70px] sm:h-[80px] md:h-[100px]  w-[70px] sm:w-[80px] md:w-[100px] rounded-full shadow inline-block"
                 src="https://placehold.co/100x100.png"
                 alt=""
               />
             </div>
-            <p>
+            <p className="mt-4 sm:mt-6 md:mt-6 font-medium">
               Simply dummy text of the printing and typesetting industry. Lorem
               Ipsum simply dummy text of the printing and typesetting industry.
               Lorem Ipsum has been.
             </p>
-            <div>
-              <p>Sara Taylor</p>
-              <p>Consumer</p>
+            <div className="mt-3">
+              <p className="font-bold">Sara Taylor</p>
+              <p className="text-sm font-medium text-gray-500">Consumer</p>
             </div>
           </div>
           <hr />
           {/* countable info */}
-          <div className="grid grid-cols-4 mt-8">
-            <div className="flex justify-center">
-              <div className="flex flex-col items-center justify-center text-center bg-transparent border  border-greenCs rounded-full h-[135px] w-[135px]">
-                <span className="text-darkGray text-[40px] font-bold font-roboto leading-[40px]">
-                  285
-                </span>
-                <p className="text-sm font-bold">Active product</p>
-              </div>
-            </div>
-            <div className="flex justify-center">
-              <div className="flex flex-col items-center justify-center text-center bg-transparent border  border-greenCs rounded-full h-[135px] w-[135px]">
-                <span className="text-darkGray text-[40px] font-bold font-roboto leading-[40px]">
-                  285
-                </span>
-                <p className="text-sm font-bold">Active product</p>
-              </div>
-            </div>
-            <div className="flex justify-center">
-              <div className="flex flex-col items-center justify-center text-center bg-transparent border  border-greenCs rounded-full h-[135px] w-[135px]">
-                <span className="text-darkGray text-[40px] font-bold font-roboto leading-[40px]">
-                  285
-                </span>
-                <p className="text-sm font-bold">Active product</p>
-              </div>
-            </div>
-            <div className="flex justify-center">
-              <div className="flex flex-col items-center justify-center text-center bg-transparent border  border-greenCs rounded-full h-[135px] w-[135px]">
-                <span className="text-darkGray text-[40px] font-bold font-roboto leading-[40px]">
-                  285
-                </span>
-                <p className="text-sm font-bold">Active product</p>
-              </div>
-            </div>
+          <div className="grid grid-cols-4 gap-4 mt-8">
+            {data.map((item, i) => {
+              return (
+                <div key={i} className="flex justify-center items-center">
+                  <div className="flex flex-col items-center justify-center text-center bg-transparent border-2  border-greenCs rounded-full h-[115px] md:h-[135px] w-[115px] md:w-[135px] p-3">
+                    <span className="text-darkGray text-[36px] lg:text-[40px] font-bold font-roboto leading-[40px]">
+                      {item.quantity}
+                    </span>
+                    <p className="text-base font-semibold text-gray-500">
+                      {item.title}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

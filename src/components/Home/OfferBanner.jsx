@@ -11,7 +11,9 @@ const OfferBanner = () => {
             className="h-[350px] w-full bg-no-repeat bg-center bg-cover px-5 ms:px-10 md:px-[40px] text-white rounded-xl"
           >
             <div className=" flex flex-col justify-center h-full w-full md:w-5/6 lg:w-3/5">
-              <p className="font-yellowTail text-[36px]">Natural!!</p>
+              <p className="font-yellowTail text-[30px] md:text-[36px] mb-3">
+                Natural!!
+              </p>
               <h3 className="capitalize font-roboto text-white">
                 Get Garden fresh fruits
               </h3>
@@ -22,7 +24,7 @@ const OfferBanner = () => {
             className="h-[350px] w-full bg-no-repeat bg-center bg-cover px-5 ms:px-10 md:px-[40px] rounded-xl"
           >
             <div className="flex flex-col justify-center h-full w-full md:w-5/6 lg:w-3/5">
-              <p className="font-yellowTail text-greenCs text-[36px]">
+              <p className="font-yellowTail text-greenCs  text-[30px] md:text-[36px] mb-3">
                 Offer!!
               </p>
               <h3 className="text-wrap font-roboto">
