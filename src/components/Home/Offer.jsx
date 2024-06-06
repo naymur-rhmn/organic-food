@@ -3,6 +3,7 @@ import SectionTitle from "../Shared/SectionTitle";
 import ButtonPrimary from "../Shared/ButtonPrimary";
 import useFood from "../../hook/useFood";
 import SingleFood from "../Foods/SingleFood";
+import { Link } from "react-router-dom";
 
 const Offer = () => {
   const data = useFood();
@@ -18,7 +19,9 @@ const Offer = () => {
             textAlign={"left"}
           />
           <div>
-            <ButtonPrimary value={"View all product"} />
+            <Link to="/shop">
+              <ButtonPrimary value={"View all product"} />
+            </Link>
           </div>
         </div>
         <div className="grid grid-cols-4 gap-4 mt-8">

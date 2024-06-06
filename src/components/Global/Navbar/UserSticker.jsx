@@ -76,11 +76,14 @@ const UserSticker = () => {
                 Login
               </button>
             </Link>
-            <button
-              className={`border px-5 py-1 font-roboto font-medium transition rounded border-orangeCs hover:bg-orangeCs `}
-            >
-              Register
-            </button>
+            <Link to="/register">
+              <button
+                onClick={() => setToggle(false)}
+                className={`border px-5 py-1 font-roboto font-medium transition rounded border-orangeCs hover:bg-orangeCs `}
+              >
+                Register
+              </button>
+            </Link>
           </div>
         </div>
       )}
