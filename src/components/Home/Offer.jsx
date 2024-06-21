@@ -4,10 +4,9 @@ import ButtonPrimary from "../Shared/ButtonPrimary";
 import useFood from "../../hook/useFood";
 import SingleFood from "../Foods/SingleFood";
 import { Link } from "react-router-dom";
+import MoreProducts from "./MoreProducts";
 
 const Offer = () => {
-  const data = useFood();
-
   return (
     <section className="bg-navyCs py-[80px]">
       <div className="max-w-screen-xl mx-auto px-4 md:px-12">
@@ -24,14 +23,7 @@ const Offer = () => {
             </Link>
           </div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-10">
-          {data
-            .reverse()
-            .slice(0, 4)
-            .map((food) => (
-              <SingleFood key={food._id} food={food} />
-            ))}
-        </div>
+        <MoreProducts />
       </div>
     </section>
   );

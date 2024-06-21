@@ -1,10 +1,11 @@
-import React from "react";
+import Newslatter from "../components/Home/Newslatter";
 import FoodShop from "../components/Shop/FoodShop";
 
 const Shop = () => {
   return (
     <div>
       <FoodShop />
+      <Newslatter />
     </div>
   );
 };

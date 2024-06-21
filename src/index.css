@@ -20,7 +20,7 @@
     @apply text-[28px] sm:text-[34px] md:text-[40px] lg:text-[50px] font-extrabold text-navyCs;
   }
   h3 {
-    @apply text-[28px] sm:text-[34px] md:text-[40px] lg:text-[44px] font-extrabold text-navyCs;
+    @apply text-[28px] sm:text-[34px] md:text-[36px] lg:text-[40px] font-extrabold text-navyCs;
   }
   h4 {
     @apply text-[35px] font-extrabold text-navyCs;
@@ -109,4 +109,15 @@
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
+}
+
+/* dashboard message  */
+.message:after {
+  position: absolute;
+  top: 0;
+  right: -25px;
+  content: "";
+  border-bottom: 56.4px solid #fff;
+  border-left: 35px solid transparent;
+  background-color: #274c5b;
 }

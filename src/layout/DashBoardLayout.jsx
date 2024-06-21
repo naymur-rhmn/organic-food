@@ -1,5 +1,4 @@
 import { Link, Outlet } from "react-router-dom";
-import TopBar from "../components/DashBoard/TopBar";
 import { AiOutlineProduct } from "react-icons/ai";
 import { MdDeleteSweep } from "react-icons/md";
 import { MdOutlineAddToPhotos } from "react-icons/md";
@@ -7,6 +6,7 @@ import { RiLogoutBoxRLine } from "react-icons/ri";
 import { HiHome } from "react-icons/hi2";
 import { HiMiniUserGroup } from "react-icons/hi2";
 import { PiKeyReturn } from "react-icons/pi";
+import TopBar from "../components/DashBoard/Topbar/TopBar";
 
 const DashBoardLayout = () => {
   return (
@@ -20,7 +20,7 @@ const DashBoardLayout = () => {
                 <HiHome size={30} /> <span>Dashboard</span>
               </li>
             </Link>
-            <Link to="/dashboard">
+            <Link to="products">
               <li className="flex gap-4 items-center hover:text-teal-500">
                 <AiOutlineProduct size={30} /> <span>Products</span>
               </li>

@@ -41,7 +41,7 @@ const AddProduct = () => {
     // post data to db
     try {
       const res = await axios.post(
-        "https://organic-food-server-1.onrender.com/foosd",
+        "https://organic-food-server-beige.vercel.app/food",
         data
       );
       toast.success("Product added success!");

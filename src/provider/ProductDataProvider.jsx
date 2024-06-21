@@ -10,7 +10,7 @@ const ProductDataProvider = ({ children }) => {
     async function loadData() {
       try {
         const res = await fetch(
-          "https://organic-food-server-1.onrender.com/foods"
+          "https://organic-food-server-beige.vercel.app/foods"
         );
         const data = await res.json();
         setFoods(data);

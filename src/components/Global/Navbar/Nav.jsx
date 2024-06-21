@@ -8,6 +8,9 @@ const Nav = () => {
       <Link to={"/"} className="font-medium text-base font-roboto">
         Home
       </Link>
+      <Link to={"/about"} className="font-medium text-base font-roboto">
+        About
+      </Link>
       <Link to={"/shop"} className="font-medium text-base font-roboto">
         Shop
       </Link>

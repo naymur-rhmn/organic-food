@@ -1,7 +1,8 @@
-import useAuth from "../../hook/useAuth";
-import Logo from "../Global/Navbar/Logo";
-import dummyImg from "../../assets/business-professional-icon.png";
+import Logo from "../../Global/Navbar/Logo";
+import dummyImg from "../../../assets/business-professional-icon.png";
 import { useEffect, useRef, useState } from "react";
+import useAuth from "../../../hook/useAuth";
+import Cart from "../../Global/Navbar/Cart";
 
 const TopBar = () => {
   const { user, logOut } = useAuth();
@@ -11,7 +12,8 @@ const TopBar = () => {
       <div>
         <Logo />
       </div>
-      <div>
+      <div className="flex gap-4">
+        <Cart />
         <div className="relative flex justify-center mr-2">
           <div className="h-12 w-12 rounded-full flex justify-center items-center">
             <img

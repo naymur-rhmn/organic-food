@@ -10,7 +10,7 @@ const Products = () => {
   };
 
   useEffect(() => {
-    fetch("https://organic-food-server-1.onrender.com/foods")
+    fetch("https://organic-food-server-beige.vercel.app/foods")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
