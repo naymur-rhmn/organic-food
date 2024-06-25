@@ -8,7 +8,7 @@ import MoreProducts from "./MoreProducts";
 
 const Offer = () => {
   return (
-    <section className="bg-navyCs py-[80px]">
+    <section className="bg-navyCs py-10 md:py-[80px]">
       <div className="max-w-screen-xl mx-auto px-4 md:px-12">
         <div className="flex justify-between items-center">
           <SectionTitle
@@ -19,7 +19,7 @@ const Offer = () => {
           />
           <div>
             <Link to="/shop">
-              <ButtonPrimary value={"View all product"} />
+              <ButtonPrimary value={"All products"} />
             </Link>
           </div>
         </div>

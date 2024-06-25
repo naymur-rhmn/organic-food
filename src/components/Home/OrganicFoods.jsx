@@ -4,7 +4,7 @@ import Foods from "../Foods/Foods";
 
 const OrganicFoods = () => {
   return (
-    <section className="py-[60px] md:py-[100px]">
+    <section className="py-10 md:py-20">
       <div className="max-w-screen-xl mx-auto px-4 md:px-12">
         <div>
           <SectionTitle subTitle={"Categories "} title={"Our Products"} />

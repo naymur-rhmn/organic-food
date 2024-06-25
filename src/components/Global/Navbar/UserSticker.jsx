@@ -30,11 +30,11 @@ const UserSticker = () => {
     <>
       {user?.email ? (
         <div className="relative flex justify-center" ref={dropdownRef}>
-          <div className="h-12 w-12 rounded-full flex justify-center items-center">
+          <div className="h-12 w-12 rounded-full flex justify-center items-center bg-gray-400">
             <img
               className="rounded-full w-full h-full cursor-pointer"
               onClick={() => setToggle((prev) => !prev)}
-              src={user?.photoURL == true ? user.photoURL : dummyImg}
+              src={user?.photoURL}
               alt=""
             />
           </div>
@@ -44,10 +44,6 @@ const UserSticker = () => {
               toggle ? "flex" : "hidden"
             }`}
           >
-            <button className="border px-5 py-1 font-roboto font-medium transition rounded border-greenCs hover:bg-greenCs w-full">
-              Profile
-            </button>
-
             <button
               onClick={handleLogout}
               className="border px-5 py-1 font-roboto font-medium transition rounded border-grayCs hover:bg-grayCs w-full"

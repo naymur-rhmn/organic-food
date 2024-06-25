@@ -8,10 +8,10 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <section id="about" className="bg-lightGrayCs py-[70px]">
+    <section id="about" className="bg-lightGrayCs py-10 md:py-[70px]">
       <div className="max-w-screen-2xl mx-auto px-4">
         <div className="grid md:grid-cols-2 items-center">
-          <div className="h-[700px] hidden md:block">
+          <div className="h-[650px] hidden md:block">
             <img className="h-full w-full" src={fruits} alt="" />
           </div>
           {/* about content */}
@@ -43,7 +43,7 @@ const About = () => {
                 }
               />
             </div>
-            <div className="mt-6">
+            <div className="mt-6 flex">
               <Link to={"/shop"}>
                 <ButtonPrimary value={"Shop Now"} />
               </Link>

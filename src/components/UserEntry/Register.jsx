@@ -1,28 +1,15 @@
 import useAuth from "../../hook/useAuth";
 import { Link, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
-import googleIcon from "../../assets/google.png";
 import githubIcon from "../../assets/github.png";
 import fbIcon from "../../assets/fb.png";
+import GoogleSignIn from "./GoogleSignIn";
+import { useState } from "react";
 
 const Register = () => {
-  const { googleSignIn, user, emailSignUp } = useAuth();
+  const [error, setError] = useState(false);
+  const { emailSignUp, user } = useAuth();
   const navigate = useNavigate();
-
-  function handleGoogleSignIn() {
-    if (!user) {
-      googleSignIn()
-        .then((res) => {
-          toast.success("Login successful!");
-          navigate("/");
-        })
-        .catch((err) => {
-          console.log(err.message);
-        });
-    } else {
-      toast.success("User Already Logged!");
-    }
-  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -35,13 +22,18 @@ const Register = () => {
       password = pass1;
     }
 
-    emailSignUp(email, password).then((res) => {
-      if (res?.user?.email) {
-        form.reset();
-        toast.success("Registration Success!!");
-        navigate("/login");
-      }
-    });
+    if (!user?.email) {
+      emailSignUp(email, password).then((res) => {
+        if (res?.user?.email) {
+          form.reset();
+          toast.success("Registration Success!!");
+          navigate("/login");
+        }
+      });
+      setError(false);
+    } else {
+      setError(true);
+    }
   };
 
   return (
@@ -79,6 +71,14 @@ const Register = () => {
               value="Submit"
             />
           </form>
+          {error && (
+            <div className="text-orange-300 text-center mt-2 text-xs">
+              User Already Exist!{" "}
+              <Link to={"/login"}>
+                <span className="underline text-white">Login</span>
+              </Link>
+            </div>
+          )}
 
           <div className="mt-4 py-3">
             <div className="relative">
@@ -90,13 +90,7 @@ const Register = () => {
 
             <div className="mt-8 flex flex-col gap-4">
               <div className="flex gap-2">
-                <button
-                  onClick={handleGoogleSignIn}
-                  className="px-4 w-full text-xl font-medium border shadow-md tracking-[1px] py-2.5 font-roboto rounded-full transition flex gap-3 items-center justify-center hover:text-white  "
-                >
-                  <img className="h-6 w-6" src={googleIcon} alt="" />
-                  <span>Google</span>
-                </button>
+                <GoogleSignIn />
                 <button className="px-4 w-full text-xl font-medium border shadow-md tracking-[1px] py-2.5 font-roboto rounded-full transition flex gap-3 items-center justify-center  hover:text-white">
                   <img className="h-7 w-7" src={fbIcon} alt="" />
                   <span>Facebook</span>

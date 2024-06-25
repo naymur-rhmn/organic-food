@@ -7,8 +7,8 @@ const Newslatter = () => {
     e.target.reset();
   };
   return (
-    <div className="py-[70px] md:block hidden">
-      <div className="max-w-screen-xl mx-auto px-4 md:px-12 h-[330px] relative z-10">
+    <div className="md:py-20 py-10 md:block hidden">
+      <div className="max-w-screen-xl mx-auto px-4 md:px-12 h-[300px] relative z-10">
         <div
           style={{ backgroundImage: `url(${banner})` }}
           className="absolute top-0 left-0 h-full w-full bg-center bg-cover bg-no-repeat content-[''] rounded-2xl -z-10"

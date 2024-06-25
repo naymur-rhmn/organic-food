@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import Message from "./Message";
 import { CartContext } from "../../../provider/CartProvider";
+import SaleLineChart from "../Chart/SaleLineChart";
 
 const Dashboard = () => {
   const { cart } = useContext(CartContext);
@@ -13,7 +14,10 @@ const Dashboard = () => {
       <Message />
       <div className="grid grid-cols-12 gap-4 mt-6">
         {/* ===== left content ======= */}
-        <div className="bg-green-100 col-span-8">a</div>
+        <div className="bg-green-100 col-span-8 pt-5 w-full h-fit">
+          <h6 className="px-7 mb-4">Our products growth</h6>
+          <SaleLineChart />
+        </div>
         {/* ====== orders summary ====== */}
         <div className="bg-[#458aa5] col-span-4 p-6 rounded-md min-h-[600px]">
           <h6 className=" font-bold text-white capitalize border-b-2 text-center">

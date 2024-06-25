@@ -43,7 +43,7 @@ const AboutUsSudo = () => {
                 }
               />
             </div>
-            <div className="mt-6">
+            <div className="mt-6 flex">
               <Link to={"/shop"}>
                 <ButtonPrimary value={"Explore Now"} />
               </Link>

@@ -16,6 +16,7 @@ import FoodShop from "../components/Shop/FoodShop";
 import Shop from "../pages/Shop";
 import AboutUs from "../pages/AboutUs";
 import Dashboard from "../components/DashBoard/Home/Dashboard";
+import Review from "../components/DashBoard/Review/Review";
 
 const router = createBrowserRouter([
   {
@@ -66,15 +67,15 @@ const router = createBrowserRouter([
         element: <Dashboard />,
       },
       {
+        path: "dashboard",
+        element: <Dashboard />,
+      },
+      {
         path: "products",
         element: <Products />,
       },
       {
-        path: "addProduct",
-        element: <AddProduct />,
-      },
-      {
-        path: "edit/:id",
+        path: "products/edit/:id",
         loader: async ({ params }) =>
           await fetch(
             `https://organic-food-server-beige.vercel.app/foods/${params.id}`
@@ -82,12 +83,21 @@ const router = createBrowserRouter([
         element: <EditProduct />,
       },
       {
+        path: "addProduct",
+        element: <AddProduct />,
+      },
+
+      {
+        path: "user/delete",
+        element: <DeleteUser />,
+      },
+      {
         path: "users",
         element: <Users />,
       },
       {
-        path: "users/delete",
-        element: <DeleteUser />,
+        path: "review",
+        element: <Review />,
       },
     ],
   },

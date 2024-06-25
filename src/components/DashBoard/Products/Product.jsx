@@ -19,7 +19,7 @@ const Product = ({ product, onDelete }) => {
         method: "DELETE",
       }
     );
-    console.log(result.ok, result.status);
+
     if (result?.ok === true) {
       closeModal();
       onDelete(id);

@@ -10,6 +10,5 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <div>
       <Toaster />
     </div>
-    ;
   </React.StrictMode>
 );

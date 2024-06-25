@@ -33,6 +33,21 @@
   }
 }
 
+/* navbar  nav active*/
+.nav-border::after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0;
+  top: 5px;
+  background: transparent;
+  transition: all 0.3s;
+}
+.nav-border:hover::before {
+  width: 100%;
+  background: blue;
+}
 /* hero section style */
 .hero::before {
   position: absolute;
@@ -95,6 +110,40 @@
   transform: rotate(180deg);
 }
 
+.quote {
+  position: relative;
+}
+.quote:before {
+  position: absolute;
+  top: -6px;
+  left: -35px;
+  content: "";
+  background-image: url(./assets/quote-right.png);
+  height: 30px;
+  width: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  font-size: 22px;
+  opacity: 0.1;
+}
+.quote::after {
+  position: absolute;
+  top: -6px;
+  right: -35px;
+  content: "";
+  background-image: url(./assets/quote-right.png);
+  height: 30px;
+  width: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-size: 22px;
+  opacity: 0.1;
+}
+
 /* who we component */
 .who-we-bg::before {
   position: absolute;
@@ -111,6 +160,7 @@
   z-index: -1;
 }
 
+/* dashboard custom styles  */
 /* dashboard message  */
 .message:after {
   position: absolute;
@@ -120,4 +170,19 @@
   border-bottom: 56.4px solid #fff;
   border-left: 35px solid transparent;
   background-color: #274c5b;
+}
+/* users image  */
+.alt-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Example styling */
+  font-size: 14px;
+  background-color: transparent;
+  text-align: center;
+  font-weight: 600;
+  line-height: 16px;
+  padding: 5px;
+  border-radius: 3px;
 }

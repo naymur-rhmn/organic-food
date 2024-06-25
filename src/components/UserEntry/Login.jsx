@@ -1,30 +1,14 @@
 import useAuth from "../../hook/useAuth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
-import googleIcon from "../../assets/google.png";
 import githubIcon from "../../assets/github.png";
 import fbIcon from "../../assets/fb.png";
+import GoogleSignIn from "./GoogleSignIn";
 
 const Login = () => {
-  const { googleSignIn, emailSignIn, user } = useAuth();
+  const { emailSignIn } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
-  // console.log(location);
-
-  function handleGoogleSignIn() {
-    if (!user) {
-      googleSignIn()
-        .then((res) => {
-          toast.success("Login successful!");
-          navigate(location?.state?.from?.pathname || "/");
-        })
-        .catch((err) => {
-          console.log(err.message);
-        });
-    } else {
-      toast.success("User Already Logged!");
-    }
-  }
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -80,13 +64,7 @@ const Login = () => {
 
             <div className="mt-8 flex flex-col gap-4">
               <div className="flex gap-2">
-                <button
-                  onClick={handleGoogleSignIn}
-                  className="px-4 w-full text-xl font-medium border shadow-md tracking-[1px] py-2.5 font-roboto rounded-full transition flex gap-3 items-center justify-center hover:text-white  "
-                >
-                  <img className="h-6 w-6" src={googleIcon} alt="" />
-                  <span>Google</span>
-                </button>
+                <GoogleSignIn />
                 <button className="px-4 w-full text-xl font-medium border shadow-md tracking-[1px] py-2.5 font-roboto rounded-full transition flex gap-3 items-center justify-center  hover:text-white">
                   <img className="h-7 w-7" src={fbIcon} alt="" />
                   <span>Facebook</span>
