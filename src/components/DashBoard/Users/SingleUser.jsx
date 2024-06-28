@@ -13,9 +13,12 @@ const SingleUser = ({ user, isDelete, handleUserId }) => {
   };
 
   const handleDelete = async (id) => {
-    const res = await fetch(`http://localhost:3000/user/delete/${id}`, {
-      method: "DELETE",
-    });
+    const res = await fetch(
+      `https://organic-food-server-beige.vercel.app/user/delete/${id}`,
+      {
+        method: "DELETE",
+      }
+    );
     if (res?.ok === true) {
       toast.success("Deleted Success!");
       handleUserId(id);

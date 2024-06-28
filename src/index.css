@@ -116,7 +116,7 @@
 .quote:before {
   position: absolute;
   top: -6px;
-  left: -35px;
+  left: -15px;
   content: "";
   background-image: url(./assets/quote-right.png);
   height: 30px;
@@ -132,7 +132,7 @@
 .quote::after {
   position: absolute;
   top: -6px;
-  right: -35px;
+  right: -15px;
   content: "";
   background-image: url(./assets/quote-right.png);
   height: 30px;

@@ -8,10 +8,10 @@ import ButtonPrimary from "../Shared/ButtonPrimary";
 
 const AboutUsSudo = () => {
   return (
-    <div id="about" className="py-[70px]">
+    <div id="about" className="py-10 md:py-[70px]">
       <div className="max-w-screen-2xl mx-auto px-4 md:px-12 ">
-        <div className="grid md:grid-cols-2 items-center">
-          <div className="h-[700px] hidden md:block">
+        <div className="grid md:grid-cols-2 items-center gap-4">
+          <div className="h-[650px] hidden md:block">
             <img className="h-full w-full" src={fruits} alt="" />
           </div>
           {/* about content */}
@@ -27,7 +27,7 @@ const AboutUsSudo = () => {
               the 1500s, when an unknown printer took a galley.
             </p>
 
-            <div className="flex  gap-4 mt-7">
+            <div className="flex items-start gap-4 mt-7">
               <AboutContentPart
                 img={veganFood}
                 title={"Organic Foods Only"}

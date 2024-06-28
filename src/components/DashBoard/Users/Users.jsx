@@ -7,7 +7,7 @@ const Users = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:3000/users")
+    fetch("https://organic-food-server-beige.vercel.app/users")
       .then((res) => res.json())
       .then((data) => {
         setUsers(data);

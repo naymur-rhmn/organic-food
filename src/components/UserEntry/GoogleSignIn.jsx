@@ -20,13 +20,16 @@ const GoogleSignIn = () => {
           photo: res?.user?.photoURL || null,
         };
 
-        const response = await fetch("http://localhost:3000/user", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(userData),
-        });
+        const response = await fetch(
+          "https://organic-food-server-beige.vercel.app/user",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(userData),
+          }
+        );
 
         // if (!response.ok) {
         //   throw new Error("Network response was not ok");

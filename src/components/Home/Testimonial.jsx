@@ -18,7 +18,7 @@ const Testimonial = () => {
                 alt=""
               />
             </div>
-            <p className="mt-4 font-medium quote">
+            <p className="mt-4 font-medium quote mx-10">
               Simply dummy text of the printing and typesetting industry. Lorem
               Ipsum simply dummy text of the printing and typesetting industry.
               Lorem Ipsum has been.

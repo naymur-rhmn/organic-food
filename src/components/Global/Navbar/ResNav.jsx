@@ -38,7 +38,7 @@ const ResNav = () => {
         </button>
       )}
       <div
-        className={`absolute top-[80px] transition  h-[400px] left-0 w-full bg-white p-5 ${
+        className={`absolute top-[80px] transition  h-[400px] left-0 w-full bg-white  shadow-xl p-5 ${
           toggleMenu ? "block" : "hidden"
         }`}
       >
@@ -49,6 +49,13 @@ const ResNav = () => {
             className="font-medium text-base font-roboto py-2 bg-gray-100 hover:bg-gray-200 w-full text-center rounded-md"
           >
             Home
+          </Link>
+          <Link
+            onClick={handleToggleMenu}
+            to={"/about"}
+            className="font-medium text-base font-roboto py-2 bg-gray-100 hover:bg-gray-200 w-full text-center rounded-md"
+          >
+            About
           </Link>
           <Link
             onClick={handleToggleMenu}
