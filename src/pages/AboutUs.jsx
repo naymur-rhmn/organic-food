@@ -9,7 +9,7 @@ import SectionBanner from "../components/Shared/SectionBanner";
 const AboutUs = () => {
   return (
     <section>
-      <SectionBanner banner={banner} title={"about us"} />
+      {/* <SectionBanner banner={banner} title={"about us"} /> */}
       <AboutUsSudo />
       <ChooseUs />
       <Team />

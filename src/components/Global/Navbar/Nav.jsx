@@ -35,6 +35,16 @@ const Nav = () => {
       >
         Shop
       </NavLink>
+      <NavLink
+        to={"/services"}
+        className={({ isActive }) =>
+          isActive
+            ? "font-medium text-base font-roboto relative text-greenCs"
+            : "font-medium text-base font-roboto"
+        }
+      >
+        Services
+      </NavLink>
       {user && (
         <NavLink
           to="/dashboard"

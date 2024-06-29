@@ -66,6 +66,13 @@ const ResNav = () => {
           </Link>
           <Link
             onClick={handleToggleMenu}
+            to={"/services"}
+            className="font-medium text-base font-roboto py-2 bg-gray-100 hover:bg-gray-200 w-full text-center rounded-md"
+          >
+            Services
+          </Link>
+          <Link
+            onClick={handleToggleMenu}
             to="/dashboard"
             className="font-medium text-base font-roboto py-2 bg-gray-100 hover:bg-gray-200 w-full text-center rounded-md"
           >

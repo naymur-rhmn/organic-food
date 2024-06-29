@@ -17,6 +17,7 @@ import Shop from "../pages/Shop";
 import AboutUs from "../pages/AboutUs";
 import Dashboard from "../components/DashBoard/Home/Dashboard";
 import Review from "../components/DashBoard/Review/Review";
+import Services from "../pages/Services";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: "about",
         element: <AboutUs />,
+      },
+      {
+        path: "services",
+        element: <Services />,
       },
       {
         path: "shop",

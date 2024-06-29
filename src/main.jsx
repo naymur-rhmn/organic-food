@@ -7,8 +7,6 @@ import { Toaster } from "react-hot-toast";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <App />
-    <div>
-      <Toaster />
-    </div>
+    <Toaster />
   </React.StrictMode>
 );

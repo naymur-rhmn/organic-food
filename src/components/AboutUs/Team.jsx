@@ -6,7 +6,7 @@ import SingleTeam from "./SingleTeam";
 
 const Team = () => {
   return (
-    <div className="py-10 md:py-[80px]">
+    <div className="py-10 md:py-20">
       <div className="max-w-screen-xl mx-auto px-4 md:px-12">
         <div className="max-w-screen-sm mx-auto px-4">
           <SectionTitle title={"Our Organic experts"} subTitle={"team"} />
