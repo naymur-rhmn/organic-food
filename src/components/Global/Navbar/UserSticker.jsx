@@ -30,7 +30,7 @@ const UserSticker = () => {
     <>
       {user?.email ? (
         <div className="relative flex justify-center" ref={dropdownRef}>
-          <div className="h-12 w-12 rounded-full flex justify-center items-center bg-gray-400">
+          <div className="h-9 w-9 rounded-full flex justify-center items-center bg-gray-400">
             <img
               className="rounded-full w-full h-full cursor-pointer"
               onClick={() => setToggle((prev) => !prev)}

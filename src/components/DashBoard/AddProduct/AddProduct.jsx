@@ -147,7 +147,7 @@ const AddProduct = () => {
         </div>
         <div className="grid grid-cols-2 gap-4">
           <div className="flex flex-col gap-1 mb-4">
-            <label htmlFor="details">Additional Description:</label>
+            <label htmlFor="details">Details:</label>
             <textarea
               className="px-3 py-3 rounded focus:shadow-md focus:outline-none"
               placeholder="Fill the Field"

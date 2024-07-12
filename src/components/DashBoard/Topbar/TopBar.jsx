@@ -15,7 +15,7 @@ const TopBar = () => {
       <div className="flex gap-4">
         <Cart />
         <div className="relative flex justify-center mr-2">
-          <div className="h-12 w-12 rounded-full flex justify-center items-center bg-gray-400">
+          <div className="h-10 w-10 rounded-full flex justify-center items-center bg-gray-400">
             <img
               className="rounded-full w-full h-full cursor-pointer"
               // onClick={() => setToggle((prev) => !prev)}

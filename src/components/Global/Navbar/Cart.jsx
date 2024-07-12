@@ -6,7 +6,7 @@ const Cart = () => {
   const { cart } = useContext(CartContext);
   return (
     <Link to="/dashboard">
-      <div className="bg-lightGreenCs flex items-center gap-1 p-2 relative rounded-full">
+      <div className="bg-lightGreenCs flex items-center gap-1 p-1 relative rounded-full">
         <div className="bg-navyCs p-2 rounded-full text-white z-10">
           <FaCartArrowDown size={14} />
         </div>
